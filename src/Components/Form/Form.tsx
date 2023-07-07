@@ -16,9 +16,7 @@ const Form: React.FC<FormProps> = ({ handleSubmit }) => {
 
   const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-
     handleSubmit({ name, email, age });
-
     // Reset the form fields
     setName("");
     setEmail("");
